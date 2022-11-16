@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="justify-content-center mt-4 mb-3">
+        <h1>AI Project and IT Project</h1>
+
+        
+           
+    </div>
+    
+
+    <div class="contact mt-4 ">
+        <div class="logo d-flex justify-content-between mb-5">
+            <img src="{{url_for('static', filename='images/logo_truong.jpeg')}}" class="logo-truong " alt="logo truong">
+            <img src="{{url_for('static', filename='images/logo_khoa.png')}}" class="logo-khoa" alt="logo khoa" >
+        </div>
+    
+        <h3>INSTRUCTOR:</h3>
+        <div class="intructor " style="font-size: 20px ; padding-left:200px;">
+            
+            <span>GVC, ThS. Trần Tiến Đức</span>
+            <br>
+            <span>Email: ductt@hcmute.edu.vn</span>
+        </div>
+
+        <h3>PERFORMER:</h3>
+        <div class="performer" style="font-size: 20px ; padding-left:200px;">
+            
+            <span>Phan Thái Bảo <br> MSSV: 20110071</span>
+            <br>
+            <span>Email: 20110071@student.hcmute.edu.vn</span>
+            
+        </div>
+    </div>
+    
+{% endblock %}

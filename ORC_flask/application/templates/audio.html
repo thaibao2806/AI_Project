@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+<div id="speechContainer card  mb-3 justify-content-center align-content-center">
+    <h1>Upload new File</h1>
+    <form class="  mb-3" method="post" enctype="multipart/form-data">
+        <input class="mb-3 btn btn-outline-success m-2" type="file" name="file"/>
+        <br>
+        <input class="btn btn-outline-danger m-2" type="submit" id="submitButton" value="Transcribe"/>
+    </form>
+
+    {% if transcript != "" %}
+        <div id="speechTranscriptContainer mb-3">
+            <h1>Transcript</h1>
+            <p id="speechText">{{ transcript }}</p>
+        </div>
+    {% endif %}
+</div>
+
+{% endblock %}
